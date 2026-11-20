@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chesney Carolissen | Carolissen Projects — Cloud, DevOps &amp; AI-Assisted Engineering</title>
+  <meta name="description" content="Chesney Carolissen (Carolissen Projects) — Information and internet services firm in Amsterdam helping businesses succeed with reliable cloud architecture, DevOps, and AI-assisted software engineering." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-monogram.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem('cc_theme');
+      var theme = (saved === 'dark' || saved === 'light')
+        ? saved
+        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-monogram.svg" alt="Carolissen Projects Monogram" class="brand-logo" />
+        <span>
+          Carolissen Projects
+          <span class="brand-sub">Chesney Carolissen</span>
+        </span>
+      </a>
+
+      <nav id="nav-links" class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="#services" class="nav-link">How I Help</a>
+        <a href="#tech-stack" class="nav-link">Languages &amp; Tools</a>
+        <a href="#support" class="nav-link">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark or light theme">
+          <span id="theme-toggle-icon" aria-hidden="true">☀️</span>
+          <span id="theme-toggle-label">Light</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Amsterdam, Netherlands 🇳🇱 • Information &amp; Internet Services</span>
+          <h1>
+            Building technology people can <span class="accent">actually rely on.</span>
+          </h1>
+          <p class="hero-lead">
+            I'm <strong>Chesney Carolissen</strong> — Cloud Solutions Architect, DevOps Engineer, Full Stack Developer, and MBA. Through <strong>Carolissen Projects</strong>, we help businesses succeed by turning creative ideas into dependable, production-grade software.
+          </p>
+          <blockquote class="hero-quote">
+            “We build technology products that bridge the gap between ‘it works’ and what real people can actually rely on. Many of my projects start as personal hobbies designed to replace costly, subscription-based apps. With AI-assisted software engineering, I can quickly turn creative ideas into reality, and I’m confident the solutions I build can do the same for your business.”
+          </blockquote>
+
+          <div class="hero-ctas">
+            <a href="portfolio.html" class="btn btn-primary">Explore Portfolio →</a>
+            <a href="https://www.linkedin.com/in/chesney-carolissen/" target="_blank" rel="noreferrer" class="btn btn-secondary">Connect on LinkedIn</a>
+            <a href="mailto:carolissen+github@gmail.com" class="btn btn-secondary">Email Me</a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <span class="hero-meta-item">⚡ Masters in Business Administration (MBA)</span>
+            <span class="hero-meta-item">☁️ AWS • Azure • GCP</span>
+            <span class="hero-meta-item">💻 <a href="https://github.com/chesney" target="_blank" rel="noreferrer">github.com/chesney</a></span>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-logo-card" aria-label="Carolissen Projects Brand Logo">
+            <img src="assets/logo-dark.svg" alt="Carolissen Projects Gold Monogram Logo (Dark Theme)" class="logo-theme-dark" />
+            <img src="assets/logo-light.svg" alt="Carolissen Projects Gold Monogram Logo (Light Theme)" class="logo-theme-light" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Story Section (combining ResumeChef AboutPage.tsx + LinkedIn ethos) -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">About Me</div>
+          <h2 class="section-title">From Real-World Frustration to Reliable Software</h2>
+          <p class="section-desc">
+            Every product I ship is shaped by practical craftsmanship, business clarity, and a refusal to accept bloated, overpriced tooling.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="story-card">
+            <h3>The Story Behind the Craft</h3>
+            <p>
+              Much like how my wife and I built <strong>TheResumeChef.com</strong> after battling fragile Microsoft Word formatting, drifting Canva layouts, and $29.99/month subscription paywalls just to download a PDF, my best work begins by solving real problems for real people.
+            </p>
+            <p>
+              Whether it’s a hospitality professional updating her CV between fast-paced contract roles, or a team needing tamper-resistant links and privacy-first analytics without enterprise bloat, I believe software should be intuitive, fast, and respectful of its users.
+            </p>
+            <div class="pill-list">
+              <span class="pill gold">Craftsmanship First</span>
+              <span class="pill emerald">Zero Unnecessary Paywalls</span>
+              <span class="pill">User-Owned Data</span>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <h3>Business Strategy Meets Deep Engineering</h3>
+            <p>
+              With a <strong>Masters in Business Administration (MBA)</strong> alongside hands-on experience across cloud infrastructure, DevOps, and full-stack development, I don’t just write code — I design systems aligned with cost control, security, and measurable business outcomes.
+            </p>
+            <p>
+              By combining modern <strong>AI-assisted software engineering</strong> with battle-tested infrastructure (Rust, TypeScript, Go, Python, Kubernetes, Docker/Podman, Traefik, and automated observability), I deliver production-ready products at startup speed.
+            </p>
+            <div class="pill-list">
+              <span class="pill gold">AI-Assisted Engineering</span>
+              <span class="pill">Cloud &amp; DevOps</span>
+              <span class="pill">Full-Stack Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I Help Businesses Succeed -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">How We Help Businesses Succeed</div>
+          <h2 class="section-title">Bridging “It Works” and Production Reliability</h2>
+          <p class="section-desc">
+            Practical, high-leverage engineering for founders, growing teams, and organizations ready to ship without friction.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>AI-Assisted Rapid Product Delivery</h3>
+            <p>
+              Turn concepts into working, tested, and deployed web applications, APIs, and internal tools rapidly—moving from idea to reliable customer-facing product without sacrificing code quality.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">☁️</div>
+            <h3>Cloud Architecture &amp; DevOps Automation</h3>
+            <p>
+              Multi-cloud infrastructure across AWS, Azure, and Google Cloud, containerized workloads with Docker/Podman &amp; Kubernetes, HTTP/3 Traefik routing, and zero-downtime blue-green deployments.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🛡️</div>
+            <h3>Security Hardening &amp; Cost Safeguards</h3>
+            <p>
+              Production readiness built in from day one: SSO integration, rate limiting, SSRF/bot protection, automated encrypted S3 backups, budget alerts, and VictoriaMetrics/Grafana monitoring.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🧩</div>
+            <h3>Custom Replacements for Costly SaaS</h3>
+            <p>
+              Eliminate recurring per-seat SaaS bloat with lean, self-hosted or custom-built alternatives tailored to your exact workflow—giving your business full ownership and predictable costs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Launched Hobby Projects</div>
+          <h2 class="section-title">Products Built &amp; Shipped</h2>
+          <p class="section-desc">
+            A look at the live products I’ve designed, engineered, and launched—starting as personal hobbies and built to production standards.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="project-card">
+            <div class="project-top">
+              <img src="assets/resumechef-mascot.svg" alt="TheResumeChef Mascot" class="project-logo" />
+              <div>
+                <h3 style="margin:0;">TheResumeChef</h3>
+                <span class="project-domain">theresumechef.com</span>
+              </div>
+            </div>
+            <p style="margin:0;color:var(--text-muted);">
+              A 100% free, recipe-driven resume studio powered by <strong>Rust (Axum)</strong> and <strong>React</strong>, built to replace fragile Word templates and greedy $29.99/month resume paywalls. Includes Cloud Pantry sync (Dropbox &amp; Google Drive), PDF/DOCX extraction, a Tech Job Board, and an MCP AI Agent API.
+            </p>
+            <div class="project-actions">
+              <a href="https://theresumechef.com" target="_blank" rel="noreferrer" class="btn btn-primary">Visit Live Site ↗</a>
+              <a href="portfolio.html#resumechef" class="btn btn-secondary">Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <img src="assets/daisylink-logo.svg" alt="getdaisylink Logo" class="project-logo" />
+              <div>
+                <h3 style="margin:0;">getdaisylink</h3>
+                <span class="project-domain">getdaisylink.com &amp; daisyl.ink</span>
+              </div>
+            </div>
+            <p style="margin:0;color:var(--text-muted);">
+              A tamper-resistant, blockchain-anchored URL shortener (Base Mainnet EIP-191 attestations), customizable QR code studio (SVG/PNG/JPEG), and opt-in privacy-first link analytics platform built with <strong>TypeScript</strong>, <strong>Node.js</strong>, and <strong>SQLite</strong>.
+            </p>
+            <div class="project-actions">
+              <a href="https://getdaisylink.com" target="_blank" rel="noreferrer" class="btn btn-primary">Visit Live Site ↗</a>
+              <a href="portfolio.html#daisylinks" class="btn btn-secondary">Case Study</a>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:1.75rem;">
+          <a href="portfolio.html" class="btn btn-secondary">View Full Portfolio &amp; Architecture Details →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages and Tools -->
+    <section id="tech-stack" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Technical Toolkit</div>
+          <h2 class="section-title">Languages and Tools</h2>
+          <p class="section-desc">
+            The languages, cloud platforms, databases, observability stacks, and automation tools I work with across projects.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          <a class="tool-item" href="https://developer.android.com" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="Android" /></div><span class="tool-name">Android</span></a>
+          <a class="tool-item" href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino" /></div><span class="tool-name">Arduino</span></a>
+          <a class="tool-item" href="https://aws.amazon.com" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" /></div><span class="tool-name">AWS</span></a>
+          <a class="tool-item" href="https://azure.microsoft.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" /></div><span class="tool-name">Azure</span></a>
+          <a class="tool-item" href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="Bash" /></div><span class="tool-name">Bash</span></a>
+          <a class="tool-item" href="https://www.blender.org/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img class="invert-on-light" src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="Blender" /></div><span class="tool-name">Blender</span></a>
+          <a class="tool-item" href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" /></div><span class="tool-name">C#</span></a>
+          <a class="tool-item" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" /></div><span class="tool-name">CSS3</span></a>
+          <a class="tool-item" href="https://www.cypress.io" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img class="invert-on-dark" src="https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db2f6b1a3f8/icons/cypress.svg" alt="Cypress" /></div><span class="tool-name">Cypress</span></a>
+          <a class="tool-item" href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django" /></div><span class="tool-name">Django</span></a>
+          <a class="tool-item" href="https://www.docker.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" /></div><span class="tool-name">Docker</span></a>
+          <a class="tool-item" href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt=".NET" /></div><span class="tool-name">.NET</span></a>
+          <a class="tool-item" href="https://www.elastic.co" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="Elasticsearch" /></div><span class="tool-name">Elasticsearch</span></a>
+          <a class="tool-item" href="https://expressjs.com" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img class="invert-on-dark" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" /></div><span class="tool-name">Express</span></a>
+          <a class="tool-item" href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img class="invert-on-dark" src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="Flask" /></div><span class="tool-name">Flask</span></a>
+          <a class="tool-item" href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="Gatsby" /></div><span class="tool-name">Gatsby</span></a>
+          <a class="tool-item" href="https://cloud.google.com" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="GCP" /></div><span class="tool-name">Google Cloud</span></a>
+          <a class="tool-item" href="https://git-scm.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" /></div><span class="tool-name">Git</span></a>
+          <a class="tool-item" href="https://go.dev" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Go" /></div><span class="tool-name">Go</span></a>
+          <a class="tool-item" href="https://grafana.com" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana" /></div><span class="tool-name">Grafana</span></a>
+          <a class="tool-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" /></div><span class="tool-name">HTML5</span></a>
+          <a class="tool-item" href="https://gohugo.io/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://api.iconify.design/logos-hugo.svg" alt="Hugo" /></div><span class="tool-name">Hugo</span></a>
+          <a class="tool-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" /></div><span class="tool-name">JavaScript</span></a>
+          <a class="tool-item" href="https://www.jenkins.io" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins" /></div><span class="tool-name">Jenkins</span></a>
+          <a class="tool-item" href="https://jestjs.io" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="Jest" /></div><span class="tool-name">Jest</span></a>
+          <a class="tool-item" href="https://www.elastic.co/kibana" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg" alt="Kibana" /></div><span class="tool-name">Kibana</span></a>
+          <a class="tool-item" href="https://kubernetes.io" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" /></div><span class="tool-name">Kubernetes</span></a>
+          <a class="tool-item" href="https://www.linux.org/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" /></div><span class="tool-name">Linux</span></a>
+          <a class="tool-item" href="https://mariadb.org/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="MariaDB" /></div><span class="tool-name">MariaDB</span></a>
+          <a class="tool-item" href="https://mochajs.org" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="Mocha" /></div><span class="tool-name">Mocha</span></a>
+          <a class="tool-item" href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" /></div><span class="tool-name">MongoDB</span></a>
+          <a class="tool-item" href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="SQL Server" /></div><span class="tool-name">SQL Server</span></a>
+          <a class="tool-item" href="https://www.mysql.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" /></div><span class="tool-name">MySQL</span></a>
+          <a class="tool-item" href="https://www.nginx.com" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="Nginx" /></div><span class="tool-name">Nginx</span></a>
+          <a class="tool-item" href="https://nodejs.org" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" /></div><span class="tool-name">Node.js</span></a>
+          <a class="tool-item" href="https://www.oracle.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="Oracle" /></div><span class="tool-name">Oracle</span></a>
+          <a class="tool-item" href="https://www.php.net" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" /></div><span class="tool-name">PHP</span></a>
+          <a class="tool-item" href="https://www.postgresql.org" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" /></div><span class="tool-name">PostgreSQL</span></a>
+          <a class="tool-item" href="https://postman.com" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" /></div><span class="tool-name">Postman</span></a>
+          <a class="tool-item" href="https://pptr.dev/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="Puppeteer" /></div><span class="tool-name">Puppeteer</span></a>
+          <a class="tool-item" href="https://www.python.org" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" /></div><span class="tool-name">Python</span></a>
+          <a class="tool-item" href="https://redis.io" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis" /></div><span class="tool-name">Redis</span></a>
+          <a class="tool-item" href="https://www.selenium.dev" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="Selenium" /></div><span class="tool-name">Selenium</span></a>
+          <a class="tool-item" href="https://www.sqlite.org/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite" /></div><span class="tool-name">SQLite</span></a>
+          <a class="tool-item" href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" /></div><span class="tool-name">TypeScript</span></a>
+          <a class="tool-item" href="https://www.vagrantup.com/" target="_blank" rel="noreferrer"><div class="tool-icon-wrap"><img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="Vagrant" /></div><span class="tool-name">Vagrant</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support / Buy Me a Coffee -->
+    <section id="support" class="section">
+      <div class="container">
+        <div class="support-banner">
+          <div class="support-copy">
+            <div class="section-kicker">Support Free Tools</div>
+            <h2>Buy Me a Coffee ☕</h2>
+            <p>
+              I keep hobby projects like <strong>TheResumeChef.com</strong> and <strong>getdaisylink.com</strong> free from sneaky monthly paywalls. If any of my tools or open-source work saved you time or helped you land an opportunity, you can fuel the next build with a coffee on Ko-fi!
+            </p>
+          </div>
+          <div class="support-actions">
+            <a href="https://ko-fi.com/chesney" target="_blank" rel="noreferrer" aria-label="Support Chesney on Ko-fi">
+              <img class="kofi-badge" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="Buy Me a Coffee at ko-fi.com/chesney" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        © <span id="current-year"></span> <strong>Carolissen Projects</strong> — Chesney Carolissen • Amsterdam, Netherlands 🇳🇱
+      </div>
+      <div class="footer-links">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="https://github.com/chesney" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/chesney-carolissen/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://ko-fi.com/chesney" target="_blank" rel="noreferrer">Ko-fi</a>
+        <a href="mailto:carolissen+github@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

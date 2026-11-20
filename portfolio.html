@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Carolissen Projects — Chesney Carolissen</title>
+  <meta name="description" content="Launched hobby projects and production software by Chesney Carolissen (Carolissen Projects), including TheResumeChef.com and getdaisylink.com." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-monogram.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem('cc_theme');
+      var theme = (saved === 'dark' || saved === 'light')
+        ? saved
+        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-monogram.svg" alt="Carolissen Projects Monogram" class="brand-logo" />
+        <span>
+          Carolissen Projects
+          <span class="brand-sub">Chesney Carolissen</span>
+        </span>
+      </a>
+
+      <nav id="nav-links" class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="index.html#services" class="nav-link">How I Help</a>
+        <a href="index.html#tech-stack" class="nav-link">Languages &amp; Tools</a>
+        <a href="index.html#support" class="nav-link">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark or light theme">
+          <span id="theme-toggle-icon" aria-hidden="true">☀️</span>
+          <span id="theme-toggle-label">Light</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Portfolio Hero -->
+    <section class="hero" style="padding-bottom:2.5rem;">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Portfolio • Hobby Projects Turned Production Products</span>
+          <h1>
+            Practical products built to <span class="accent">replace costly subscriptions.</span>
+          </h1>
+          <p class="hero-lead">
+            Many of these started as weekend hobby projects solving everyday frustrations for family, friends, and myself. With AI-assisted software engineering and solid cloud infrastructure, each one was hardened into a fast, reliable service people use in production.
+          </p>
+          <div class="hero-ctas">
+            <a href="#resumechef" class="btn btn-primary">TheResumeChef.com</a>
+            <a href="#daisylinks" class="btn btn-secondary">getdaisylink.com</a>
+            <a href="https://github.com/chesney" target="_blank" rel="noreferrer" class="btn btn-secondary">GitHub Profile ↗</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-logo-card" style="max-width:260px;" aria-label="Carolissen Projects Brand Logo">
+            <img src="assets/logo-dark.svg" alt="Carolissen Projects Gold Monogram Logo (Dark Theme)" class="logo-theme-dark" />
+            <img src="assets/logo-light.svg" alt="Carolissen Projects Gold Monogram Logo (Light Theme)" class="logo-theme-light" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 1: TheResumeChef -->
+    <section id="resumechef" class="section">
+      <div class="container">
+        <article class="project-card">
+          <div class="project-top">
+            <img src="assets/resumechef-mascot.svg" alt="TheResumeChef Mascot" class="project-logo" style="width:72px;height:72px;" />
+            <div>
+              <div class="section-kicker" style="margin-bottom:0.2rem;">Launched Product • Career &amp; AI Tooling</div>
+              <h2 style="margin:0;font-size:1.75rem;">TheResumeChef</h2>
+              <span class="project-domain">https://theresumechef.com</span>
+            </div>
+          </div>
+
+          <p style="margin:0;color:var(--text-muted);font-size:1rem;">
+            Built after experiencing firsthand the frustration of updating resumes in Microsoft Word and Canva—and watching job seekers get hit with sneaky $29.99/month subscription paywalls just to download their own PDF. <strong>TheResumeChef</strong> treats career history like structured ingredients, letting users switch between designer templates and export crisp, ATS-friendly vector PDFs 100% free.
+          </p>
+
+          <div class="grid-2">
+            <div>
+              <h3 style="margin:0 0 0.6rem;font-size:1rem;">Key Capabilities</h3>
+              <ul class="project-features">
+                <li><strong>100% Free Forever Studio:</strong> Instant live preview, 10 chef-curated layouts, custom typography, and 1-click vector PDF export with zero watermarks.</li>
+                <li><strong>Cloud Pantry Sync:</strong> Save portable JSON resume bundles locally or sync directly to Dropbox &amp; Google Drive without mandatory account sign-up.</li>
+                <li><strong>Resume Extraction Kitchen:</strong> Drag-and-drop PDF, DOCX, and TXT parser extracting employment history, education, and skills into structured JSON.</li>
+                <li><strong>Tech Job Board &amp; MCP Server:</strong> Candidate matching engine plus a JSON-RPC 2.0 Model Context Protocol (MCP) API enabling AI agents (Claude, Cursor, Antigravity) to post and manage listings.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 style="margin:0 0 0.6rem;font-size:1rem;">Architecture &amp; Stack</h3>
+              <ul class="project-features">
+                <li><strong>Backend:</strong> Rust (Axum) serving high-performance REST &amp; MCP APIs plus embedded static assets.</li>
+                <li><strong>Frontend:</strong> React 19, TypeScript, Vite, Tailwind CSS.</li>
+                <li><strong>Infrastructure:</strong> Containerized with Podman/Docker, Traefik v3 reverse proxy with native HTTP/3 (QUIC), Cloudflare Edge, and Authelia SSO admin dashboard.</li>
+                <li><strong>Integrations:</strong> Stripe subscriptions for AI agent access, Google AdSense (non-intrusive banner monetization), Dropbox &amp; Google Drive OAuth.</li>
+              </ul>
+              <div class="pill-list">
+                <span class="pill gold">Rust + Axum</span>
+                <span class="pill">React 19</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">HTTP/3 QUIC</span>
+                <span class="pill">MCP Protocol</span>
+                <span class="pill">Podman</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://theresumechef.com" target="_blank" rel="noreferrer" class="btn btn-primary">Launch TheResumeChef ↗</a>
+            <a href="https://github.com/chesney" target="_blank" rel="noreferrer" class="btn btn-secondary">View on GitHub ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Project 2: getdaisylink -->
+    <section id="daisylinks" class="section">
+      <div class="container">
+        <article class="project-card">
+          <div class="project-top">
+            <img src="assets/daisylink-logo.svg" alt="getdaisylink Logo" class="project-logo" style="width:72px;height:72px;" />
+            <div>
+              <div class="section-kicker" style="margin-bottom:0.2rem;">Launched Product • Security, QR &amp; Analytics</div>
+              <h2 style="margin:0;font-size:1.75rem;">getdaisylink</h2>
+              <span class="project-domain">https://getdaisylink.com &amp; https://daisyl.ink</span>
+            </div>
+          </div>
+
+          <p style="margin:0;color:var(--text-muted);font-size:1rem;">
+            A tamper-resistant, blockchain-anchored URL shortener, customizable QR code studio, and opt-in privacy-first link analytics platform. Designed as a trustworthy, transparent alternative to pricey link-management SaaS tools.
+          </p>
+
+          <div class="grid-2">
+            <div>
+              <h3 style="margin:0 0 0.6rem;font-size:1rem;">Key Capabilities</h3>
+              <ul class="project-features">
+                <li><strong>Tamper-Resistant Short Links:</strong> Computes a canonical SHA-256 hash of <code>(slug, destinationUrl, createdAt)</code> and signs an EIP-191 block attestation against Base Mainnet; every redirect verifies integrity in real time.</li>
+                <li><strong>Customizable QR Code Studio:</strong> Generates HD SVG, PNG, and JPEG QR codes with custom module patterns, corner eyes, colors, frames, and watermarks.</li>
+                <li><strong>Opt-In Privacy-First Analytics:</strong> Free anonymous links record zero click telemetry; authenticated users (Google &amp; Dropbox SSO, zero local passwords) can opt in for click, QR scan, geo, referrer, and UTM insights.</li>
+                <li><strong>Abuse &amp; Spam Hardening:</strong> SSRF URL validation, IPv6 <code>/64</code> quota bucketing, Cloudflare Turnstile bot protection, and Resend email receipts.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 style="margin:0 0 0.6rem;font-size:1rem;">Architecture &amp; Stack</h3>
+              <ul class="project-features">
+                <li><strong>Runtime &amp; Data:</strong> TypeScript, Node.js, SQLite with 6-hourly atomic S3 backups and 90-day lifecycle rules.</li>
+                <li><strong>Blockchain:</strong> Base Mainnet (Chain ID 8453) gasless EIP-191 attestation with 15s block caching.</li>
+                <li><strong>Observability &amp; Ops:</strong> Internal <code>/metrics</code> scraped by VictoriaMetrics, Grafana unified alerting, external synthetic watchdog cron, and blue-green container cutover via Traefik.</li>
+                <li><strong>Testing:</strong> Comprehensive automated unit &amp; integration test suite (203 tests across 13 files).</li>
+              </ul>
+              <div class="pill-list">
+                <span class="pill gold">TypeScript</span>
+                <span class="pill">Node.js</span>
+                <span class="pill">SQLite</span>
+                <span class="pill">Base Mainnet</span>
+                <span class="pill">VictoriaMetrics</span>
+                <span class="pill">Grafana</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://getdaisylink.com" target="_blank" rel="noreferrer" class="btn btn-primary">Launch getdaisylink ↗</a>
+            <a href="https://github.com/chesney" target="_blank" rel="noreferrer" class="btn btn-secondary">View on GitHub ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Support / Buy Me a Coffee -->
+    <section class="section">
+      <div class="container">
+        <div class="support-banner">
+          <div class="support-copy">
+            <div class="section-kicker">Work Together or Support</div>
+            <h2>Want to Build Something Reliable for Your Business?</h2>
+            <p>
+              Whether you need AI-assisted product delivery, cloud/DevOps hardening, or want to support free hobby tools like TheResumeChef and getdaisylink—let's connect.
+            </p>
+          </div>
+          <div class="support-actions">
+            <a href="https://www.linkedin.com/in/chesney-carolissen/" target="_blank" rel="noreferrer" class="btn btn-primary">Message on LinkedIn</a>
+            <a href="https://ko-fi.com/chesney" target="_blank" rel="noreferrer" aria-label="Support Chesney on Ko-fi">
+              <img class="kofi-badge" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="Buy Me a Coffee at ko-fi.com/chesney" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        © <span id="current-year"></span> <strong>Carolissen Projects</strong> — Chesney Carolissen • Amsterdam, Netherlands 🇳🇱
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/chesney" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/chesney-carolissen/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://ko-fi.com/chesney" target="_blank" rel="noreferrer">Ko-fi</a>
+        <a href="mailto:carolissen+github@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

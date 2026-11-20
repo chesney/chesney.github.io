@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background & Accent Gradients -->
+    <linearGradient id="rc-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <radialGradient id="rc-glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#ea580c" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Metallic Silver Tray Gradients -->
+    <linearGradient id="rc-tray-grad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="35%" stop-color="#cbd5e1" />
+      <stop offset="70%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <linearGradient id="rc-tray-rim" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <!-- Chef Hat Gradients -->
+    <linearGradient id="rc-toque-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Paper Gradients -->
+    <linearGradient id="rc-paper-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="rc-paper-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <!-- Gold Accent for Stars & Ribbon -->
+    <linearGradient id="rc-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Chef Coat & Red Scarf -->
+    <linearGradient id="rc-scarf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="rc-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="rc-soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Icon Container (Rounded Squircle) -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#rc-bg-grad)" />
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#rc-glow)" />
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.25" />
+
+  <!-- Ambient Glow Behind The Platter of Resumes -->
+  <circle cx="330" cy="190" r="130" fill="#f59e0b" opacity="0.18" filter="blur(30px)" />
+
+  <!-- Fresh "Hot From The Kitchen" Sparkles & Steam Swirls -->
+  <g opacity="0.9">
+    <!-- Steam swirl 1 -->
+    <path d="M 330 115 Q 320 90, 335 70 T 330 45" fill="none" stroke="#fde047" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+    <!-- Steam swirl 2 -->
+    <path d="M 365 110 Q 380 85, 370 65 T 375 40" fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+    <!-- Golden 4-point Sparkle Star -->
+    <path d="M 405 95 Q 405 105, 415 105 Q 405 105, 405 115 Q 405 105, 395 105 Q 405 105, 405 95 Z" fill="url(#rc-gold)" />
+    <!-- Secondary small sparkle -->
+    <path d="M 270 120 Q 270 126, 276 126 Q 270 126, 270 132 Q 270 126, 264 126 Q 270 126, 270 120 Z" fill="url(#rc-gold)" />
+  </g>
+
+  <!-- ================= CHEF BODY & COAT ================= -->
+  <!-- Chef Shoulders & Coat -->
+  <g filter="url(#rc-shadow)">
+    <!-- Main white double-breasted jacket -->
+    <path d="M 110 470 C 110 395, 140 340, 225 340 C 310 340, 350 395, 350 470 Z" fill="#f8fafc" />
+    <!-- Jacket collar / overlap -->
+    <path d="M 225 340 L 265 470 L 210 470 Z" fill="#e2e8f0" opacity="0.6" />
+    <!-- Coat Buttons -->
+    <circle cx="210" cy="385" r="5" fill="#475569" />
+    <circle cx="245" cy="385" r="5" fill="#475569" />
+    <circle cx="212" cy="415" r="5" fill="#475569" />
+    <circle cx="247" cy="415" r="5" fill="#475569" />
+    <circle cx="214" cy="445" r="5" fill="#475569" />
+    <circle cx="249" cy="445" r="5" fill="#475569" />
+  </g>
+
+  <!-- Red Chef Neckerchief -->
+  <path d="M 195 340 Q 225 365, 255 340 Q 240 375, 225 385 Q 210 375, 195 340 Z" fill="url(#rc-scarf)" filter="url(#rc-soft-shadow)" />
+  <circle cx="225" cy="362" r="6" fill="#991b1b" />
+
+  <!-- Right Arm (Chef's Hand resting casually or welcoming) -->
+  <path d="M 130 380 Q 95 410, 105 450" fill="none" stroke="#f8fafc" stroke-width="28" stroke-linecap="round" />
+  <circle cx="106" cy="450" r="14" fill="#fbcfe8" />
+
+  <!-- Left Arm (Holding the Tray Up High) -->
+  <path d="M 315 365 C 360 350, 375 295, 350 255" fill="none" stroke="#f8fafc" stroke-width="32" stroke-linecap="round" />
+  <!-- Left Hand / Fingers clasping the tray base -->
+  <ellipse cx="345" cy="245" rx="16" ry="12" fill="#fed7aa" transform="rotate(-15 345 245)" />
+
+  <!-- ================= CHEF HEAD & FACE ================= -->
+  <!-- Neck -->
+  <rect x="210" y="310" width="30" height="35" rx="10" fill="#fed7aa" />
+
+  <!-- Head Base -->
+  <circle cx="225" cy="275" r="48" fill="#fed7aa" filter="url(#rc-soft-shadow)" />
+
+  <!-- Ears -->
+  <circle cx="175" cy="275" r="10" fill="#fbcfe8" />
+  <circle cx="275" cy="275" r="10" fill="#fbcfe8" />
+
+  <!-- Chef Eyes (Joyful arches) -->
+  <path d="M 200 262 Q 210 254, 218 262" fill="none" stroke="#1e293b" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 232 262 Q 240 254, 248 262" fill="none" stroke="#1e293b" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Cheerful Rosy Cheeks -->
+  <circle cx="196" cy="275" r="8" fill="#f87171" opacity="0.45" />
+  <circle cx="254" cy="275" r="8" fill="#f87171" opacity="0.45" />
+
+  <!-- Big Italian / French Curled Chef Mustache -->
+  <path d="M 225 280 C 205 270, 185 285, 175 280 C 180 292, 205 295, 225 285 C 245 295, 270 292, 275 280 C 265 285, 245 270, 225 280 Z" fill="#78350f" filter="url(#rc-soft-shadow)" />
+
+  <!-- Friendly Smile underneath Mustache -->
+  <path d="M 215 295 Q 225 306, 235 295" fill="none" stroke="#991b1b" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- ================= CHEF TOQUE (HAT) ================= -->
+  <g filter="url(#rc-shadow)">
+    <!-- Hat Headband / Base Ring -->
+    <rect x="180" y="215" width="90" height="24" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <line x1="185" y1="234" x2="265" y2="234" stroke="#d97706" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Big Fluffy Chef Hat Toque Folds -->
+    <path d="M 185 215 
+             C 150 200, 140 145, 175 125 
+             C 170 95, 210 75, 235 88 
+             C 255 70, 295 85, 295 120 
+             C 325 130, 320 185, 280 215 
+             Z" 
+          fill="url(#rc-toque-grad)" 
+          stroke="#e2e8f0" 
+          stroke-width="2" />
+
+    <!-- Delicate Toque Vertical Pleats -->
+    <path d="M 198 215 C 190 170, 200 130, 205 105" fill="none" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+    <path d="M 228 215 C 228 165, 230 120, 232 95" fill="none" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+    <path d="M 258 215 C 265 170, 260 130, 255 105" fill="none" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+  </g>
+
+  <!-- ================= SERVING TRAY (CLOCHE PLATTER) ================= -->
+  <g filter="url(#rc-shadow)">
+    <!-- Serving Platter Base Ellipse -->
+    <ellipse cx="345" cy="238" rx="100" ry="24" fill="url(#rc-tray-rim)" />
+    <ellipse cx="345" cy="235" rx="96" ry="20" fill="url(#rc-tray-grad)" />
+    <!-- Metallic reflection highlight stripe across platter edge -->
+    <ellipse cx="345" cy="235" rx="88" ry="16" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6" />
+    <!-- Platter bottom rim shadow -->
+    <path d="M 250 238 Q 345 262, 440 238" fill="none" stroke="#475569" stroke-width="4" opacity="0.5" />
+  </g>
+
+  <!-- ================= STACK OF RESUMES ON TRAY ================= -->
+  <g filter="url(#rc-shadow)">
+    <!-- Bottom Resume Sheet (Slightly tilted) -->
+    <rect x="296" y="165" width="102" height="66" rx="4" fill="url(#rc-paper-grad2)" transform="rotate(-6 345 198)" stroke="#cbd5e1" stroke-width="1.5" />
+    
+    <!-- Middle Resume Sheet (Slightly counter-rotated) -->
+    <rect x="294" y="158" width="102" height="66" rx="4" fill="url(#rc-paper-grad2)" transform="rotate(4 345 191)" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Top Resume Sheet (Crisp & Proudly Displayed) -->
+    <g transform="rotate(-2 345 185)">
+      <rect x="292" y="146" width="106" height="74" rx="4" fill="url(#rc-paper-grad1)" stroke="#94a3b8" stroke-width="1.5" />
+      
+      <!-- Top Resume Header / Name Banner (Chef Blue / Violet) -->
+      <rect x="300" y="153" width="50" height="7" rx="2" fill="#2563eb" />
+      <rect x="300" y="163" width="30" height="3.5" rx="1" fill="#64748b" />
+      
+      <!-- Mini Profile Photo Stamp on Resume -->
+      <rect x="372" y="152" width="18" height="18" rx="3" fill="#e0e7ff" stroke="#3b82f6" stroke-width="1" />
+      <circle cx="381" cy="159" r="4" fill="#3b82f6" />
+      <path d="M 374 169 C 374 166, 378 165, 381 165 C 384 165, 388 166, 388 169 Z" fill="#3b82f6" />
+
+      <!-- Horizontal Divider Line -->
+      <line x1="300" y1="174" x2="390" y2="174" stroke="#e2e8f0" stroke-width="1.5" />
+
+      <!-- Bullet Rows / Experience Lines -->
+      <!-- Item 1 -->
+      <circle cx="303" cy="182" r="1.5" fill="#2563eb" />
+      <line x1="308" y1="182" x2="388" y2="182" stroke="#475569" stroke-width="2.2" stroke-linecap="round" />
+      <line x1="308" y1="187" x2="368" y2="187" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round" />
+
+      <!-- Item 2 -->
+      <circle cx="303" cy="195" r="1.5" fill="#f59e0b" />
+      <line x1="308" y1="195" x2="385" y2="195" stroke="#475569" stroke-width="2.2" stroke-linecap="round" />
+      <line x1="308" y1="200" x2="350" y2="200" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round" />
+
+      <!-- Item 3 / Skills pills -->
+      <rect x="302" y="207" width="22" height="5" rx="2" fill="#dbeafe" />
+      <rect x="328" y="207" width="26" height="5" rx="2" fill="#fef3c7" />
+      <rect x="358" y="207" width="20" height="5" rx="2" fill="#dcfce7" />
+
+      <!-- Corner folded dog-ear on top right -->
+      <polygon points="388,146 398,156 388,156" fill="#cbd5e1" />
+      <polygon points="388,146 398,146 398,156" fill="#f1f5f9" opacity="0.7" />
+    </g>
+  </g>
+</svg>
